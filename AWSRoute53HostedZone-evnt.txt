@@ -1,0 +1,53 @@
+{
+    "eventVersion": "1.09",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAW3MEE3NICMJCE6R4I:3session",
+        "arn": "arn:aws:sts::471112932176:assumed-role/AWSServiceRoleForAmazonEKS/3session",
+        "accountId": "471112932176",
+        "accessKeyId": "ASIAW3MEE3NIKNE6RSIG",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAW3MEE3NICMJCE6R4I",
+                "arn": "arn:aws:iam::471112932176:role/aws-service-role/eks.amazonaws.com/AWSServiceRoleForAmazonEKS",
+                "accountId": "471112932176",
+                "userName": "AWSServiceRoleForAmazonEKS"
+            },
+            "attributes": {
+                "creationDate": "2024-07-27T17:33:23Z",
+                "mfaAuthenticated": "false"
+            }
+        },
+        "invokedBy": "eks.amazonaws.com"
+    },
+    "eventTime": "2024-07-27T17:33:25Z",
+    "eventSource": "route53.amazonaws.com",
+    "eventName": "AssociateVPCWithHostedZone",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "eks.amazonaws.com",
+    "userAgent": "eks.amazonaws.com",
+    "requestParameters": {
+        "hostedZoneId": "Z02703982P4K6IQMM82A4",
+        "vPC": {
+            "vPCRegion": "ap-south-1",
+            "vPCId": "vpc-02d405e2a35ebcd09"
+        }
+    },
+    "responseElements": {
+        "changeInfo": {
+            "id": "/change/C0094338I3DYIDUXXQ2J",
+            "status": "PENDING",
+            "submittedAt": "Jul 27, 2024 5:33:25 PM",
+            "comment": ""
+        }
+    },
+    "requestID": "119ce2f6-f028-474f-942f-b8ea9ab080ef",
+    "eventID": "e01f4ec7-a5af-4884-ba21-fb02e242061a",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "apiVersion": "2013-04-01",
+    "managementEvent": true,
+    "recipientAccountId": "471112932176",
+    "eventCategory": "Management"
+}

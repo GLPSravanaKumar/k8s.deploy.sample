@@ -1,0 +1,60 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "kube-dns",
+    "namespace": "kube-system",
+    "uid": "22db2f6b-75fa-48ea-b867-0fe3226163a9",
+    "resourceVersion": "1808",
+    "creationTimestamp": "2024-07-27T17:41:59Z",
+    "labels": {
+      "eks.amazonaws.com/component": "kube-dns",
+      "k8s-app": "kube-dns",
+      "kubernetes.io/cluster-service": "true",
+      "kubernetes.io/name": "CoreDNS"
+    },
+    "annotations": {
+      "prometheus.io/port": "9153",
+      "prometheus.io/scrape": "true"
+    }
+  },
+  "spec": {
+    "ports": [
+      {
+        "name": "dns",
+        "protocol": "UDP",
+        "port": 53,
+        "targetPort": 53
+      },
+      {
+        "name": "dns-tcp",
+        "protocol": "TCP",
+        "port": 53,
+        "targetPort": 53
+      },
+      {
+        "name": "metrics",
+        "protocol": "TCP",
+        "port": 9153,
+        "targetPort": 9153
+      }
+    ],
+    "selector": {
+      "k8s-app": "kube-dns"
+    },
+    "clusterIP": "10.100.0.10",
+    "clusterIPs": [
+      "10.100.0.10"
+    ],
+    "type": "ClusterIP",
+    "sessionAffinity": "None",
+    "ipFamilies": [
+      "IPv4"
+    ],
+    "ipFamilyPolicy": "SingleStack",
+    "internalTrafficPolicy": "Cluster"
+  },
+  "status": {
+    "loadBalancer": {}
+  }
+}

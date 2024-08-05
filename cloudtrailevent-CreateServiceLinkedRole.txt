@@ -1,0 +1,42 @@
+JSON view
+{
+    "eventVersion": "1.09",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAW3MEE3NIITLMYVPEA:AmazonEKS",
+        "arn": "arn:aws:sts::471112932176:assumed-role/EKS/AmazonEKS",
+        "accountId": "471112932176",
+        "accessKeyId": "ASIAW3MEE3NIJWYQQP7S",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "AROAW3MEE3NIITLMYVPEA",
+                "arn": "arn:aws:iam::471112932176:role/EKS",
+                "accountId": "471112932176",
+                "userName": "EKS"
+            },
+            "attributes": {
+                "creationDate": "2024-07-27T17:26:53Z",
+                "mfaAuthenticated": "false"
+            }
+        },
+        "invokedBy": "eks.amazonaws.com"
+    },
+    "eventTime": "2024-07-27T17:26:53Z",
+    "eventSource": "iam.amazonaws.com",
+    "eventName": "CreateServiceLinkedRole",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "eks.amazonaws.com",
+    "userAgent": "eks.amazonaws.com",
+    "errorCode": "AccessDenied",
+    "errorMessage": "User: arn:aws:sts::471112932176:assumed-role/EKS/AmazonEKS is not authorized to perform: iam:CreateServiceLinkedRole on resource: arn:aws:iam::471112932176:role/aws-service-role/eks.amazonaws.com/AWSServiceRoleForAmazonEKS because no identity-based policy allows the iam:CreateServiceLinkedRole action",
+    "requestParameters": null,
+    "responseElements": null,
+    "requestID": "4d95b9c8-b996-45b8-ba77-d7b84bca09ea",
+    "eventID": "108675ff-8421-4208-9675-225d88f2e98f",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "471112932176",
+    "eventCategory": "Management"
+}

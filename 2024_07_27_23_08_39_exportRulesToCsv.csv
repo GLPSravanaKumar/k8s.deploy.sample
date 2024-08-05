@@ -1,0 +1,3 @@
+GroupId,GroupName,Type,IpProtocol,FromPort,ToPort,IpRanges,Ipv6Ranges,PrefixListIds,UserIdGroupPairs
+sg-0b4d57b012c0e1c77,eks-cluster-sg-Sample-eks-2135452170,Inbound/Ingress,'-1,,,,,,sg-0b4d57b012c0e1c77
+sg-0b4d57b012c0e1c77,eks-cluster-sg-Sample-eks-2135452170,Outbound/Egress,'-1,,,0.0.0.0/0,,,
